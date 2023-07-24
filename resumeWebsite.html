@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.link {
+  font-size:12px;
+  margin: 5px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: 	#2f4f4f ;
+  color: white;
+}
+
+h3 {
+  margin: 5px;
+}
+
+img {
+  padding: 5px;
+}
+
+ul {
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+h2 {
+  text-decoration: underline; 
+}
+
+h5 {
+  font-size: 20px;
+  margin:10px;
+}
+h4 {
+  font-size: 25px;
+  margin:10px;
+}
+p {
+  font-size: 14px;
+  padding: 5px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color:	#8fbc8f	;
+  color: white;
+}
+
+
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  background-color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  margin: 10px;
+}
+
+.sepLine {
+  background-color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color:		#2f4f4f;
+  padding: 20px;
+  color: white;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: #fffafa;
+  padding: 20px;
+}
+
+.sectionOdd {
+  flex: 70%;
+  background-color:	#8fbc8f;
+  padding: 20px;
+}
+
+.contents:hover, contents:active {
+  padding: 5px;
+  color: white;
+}
+
+.contents:link {
+  padding: 5px;
+  color: white;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.sectionEven {
+  flex: 70%;
+  background-color:	#8fbc8f;
+  padding: 20px;
+}
+
+.aboutBox {
+  padding: 10px;
+  margin: 10px;
+}
+
+.white {
+    color:white;
+}
+
+
+/* Fake image, just for this example */
+.fakeimg {
+  flex: 30%;
+  width: 100%;
+  height: auto;
+
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<div style="background:	#8fbc8f	;padding:5px">
+  <h4 style="text-align:center"></h4>
+</div>
+
+<div class="header">
+  <h1>Abigail Johnson's Website</h1>
+    <p>Phone Number: 847-406-7855
+    - Email: johnson.abiga@northeastern.edu</p>
+</div>
+
+<div class="navbar">
+  <a href="https://github.com/arj916">GitHub</a>
+  <a href="https://www.linkedin.com/in/abigail-johnson-737aa3246/">LinkedIn</a>
+  <a href="https://drive.google.com/file/d/1P_6GL34p5w2F5IgfB71CvP18WxtutEOl/view?usp=sharing">Resume PDF</a>
+  <a href="https://northeastern-csm.symplicity.com/students/psx/profile">NUWorks Public Profile</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <div class="aboutBox">
+        <h2 id= "About">About Me</h2>
+    <div><img class="fakeimg" src="https://lh3.googleusercontent.com/pw/AIL4fc8EL_tY6funv3sewRzb7-iMoFSJw-vYBXD0Xe4qKhj-MkIInZCzb9Ns5ZnUe16utfcMTzO1ZOZ1qxa6RshahZuRMBSGNqFqKI6DFtIfNtzOtLArGRY=w575-h315-p-k" /></div>
+    <p>I am a 3rd Year at Northeastern University. I am  combined Computer Science and Computer Engineering Major.</p>
+    </div>
+    <div class="sepLine"></div>
+    <div class="sticky">
+    <h2>Table of Contents</h2>
+     <div class="white"><a class="contents" href="#About">About Me</a></div>
+   <div><a class="contents" href="#Education">Education</a></div>
+    <div><a class="contents" href="#Expirence">Expirence</a></div>
+    <div><a class="contents" href="#Languages">Languages and Skills</a></div>
+    <div><a class="contents" href="#Projects">Projects</a></div>
+    <div><a class="contents" href="#Leadership">Leadership</a></div>
+  </div>
+  </div>
+  <div class="main">
+    <div class="sectionOdd">
+    <h2 id= "Education">Education</h2>
+    </div>
+    <h5>Northeastern University, Boston, MA</h5>
+    <ul>
+    <li>Major: BS in Computer Science & Computer Engineering, GPA: 3.92 (2022 Dean’s List)</li>
+<li>
+    Extracurricular Activities: Northeastern University Women in Technology, SWE, Cheese Club, Intramural Broomball, Ultimate </li>
+    </ul>
+    <h5>University College Dublin, Dublin, Ireland</h5>
+    <ul>
+    <li>Semester abroad through N.U.in program </li>
+    </ul>
+    <h5>Deerfield High School, Deerfield, IL</h5>
+    <ul>
+    <li>GPA: 3.96 (unweighted)</li>
+<li>Awards: 2022 Dean’s List, 2021 Deerfield Scholar, High Honor Roll Student (all semesters), Spanish Honors Society Inductee,
+Deerfield Honors Society Inductee, Deerfield Art Fair Honoree, NFHCA 2019 
+</li>
+    </ul>
+     <div class="sectionEven">
+    <h2 id = "Expirence">Expirence</h2>
+    </div>
+    <h4>Toast Inc</h4>
+    <h5>Software Engineer Co-op, Boston, MA January 2023- Present</h5>
+    <ul>
+    <li>Developed new features in a full stack capacity to promote a more efficient and enjoyable website for a project team that
+contributed $26 Million of gross profit in Q1</li>
+  <li>Created, debugged, and implemented UI components that increased website traffic by 20%
+</li>
+<li>Helmed the full stack development of an internal feature that increased operation efficiency and improved communication
+</li>
+<li>Spearheaded the creation and implementation of multiple rich, interactive pages that increased the usability and customer
+engagement with the product
+</li></ul>
+    <h4>Machine Learning Research</h4>
+    <h5>Research Assistant, Boston, MA October 2022- Present</h5>
+    <ul>
+    <li> Working individually and in small groups to write python algorithms from scratch to test machine learning in robots 
+</li>
+  <li> Researching possible applications of machine learning in cybersecurity, specifically across a network of devices
+</li>
+</ul>
+    <h4>Lou Malnati’s</h4>
+    <h5>Cashier, Highland Park, IL June 2021- Present</h5>
+   <ul>
+    <li>Answered calls, recorded orders from customers, and ensured customers received their orders in a timely manner 
+</li>
+  <li>Praised by boss and customers for stellar customer service and efficiency during rush hour
+</li>
+   </ul>
+    <h4>Heartland Animal Shelter</h4>
+    <h5>Volunteer, Mt. Prospect, IL June 2019-Present</h5>
+    <ul>
+    <li>Worked with other volunteers to walk and care for the dogs, clean kennels, prepare meals and ensure safety and comfort</li>
+  <li> Commended by volunteer coordinator for her commitment to the shelter
+</i>
+    </ul>
+ <div class="sectionOdd">
+   <h2  id = "Languages">Skills and Languages</h2>
+   </div>
+  <h5>Languages and Frameworks</h5>
+  <ul>
+    <li>Python, Java, C++, Typescript, JavaScript, CSS, Kotlin, React, jQuery, Apollo GraphQL</li>
+  </ul>
+   <h5>Electronics & Programs</h5>
+   <ul>
+    <li>Excel, Solidworks, AutoCAD, MATLAB, basic circuits, DDM, GitHub, Oracle, Intellij
+</li>
+</ul>
+  <div class="sectionEven">
+<h2 id = "Projects">Projects</h2>
+</div>
+
+<h6>*github has all the code files some are private and need to be asked to be accessed</h6>
+<h6>*public profile on NUWorks which is linked above has cad files and presentation links</h6> 
+   <h3>Science Exhibit </h3>
+    <a href="https://lh3.googleusercontent.com/pw/AIL4fc-DjD5RfnPNDgDw7oBWnq0O9JizFTlWlS8YV0V58d_0OYzaNN6z4MvhUH5RlZQcP0TQgA-6h91Zc6r1BlkKrvQdz8OULnlQoePo2OZo45224sBWwHo=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/pw/AIL4fc-DjD5RfnPNDgDw7oBWnq0O9JizFTlWlS8YV0V58d_0OYzaNN6z4MvhUH5RlZQcP0TQgA-6h91Zc6r1BlkKrvQdz8OULnlQoePo2OZo45224sBWwHo=w600-h315-p-k" /> </a>
+    <p>The challenge of this project was to create an activity that would be fun, educational, and intuitive for elementary school kids. My team and I addressed this challenge by incorporating 3D printed building blocks so the kids have a hands-on activity. Bulletproofing the code so that the kids would still be able to complete the entire activity despite pressing the wrong button or providing the wrong input. Including pre  and post  activity quizzes to ensure the kids retain the new concepts from the exhibit. This resulted in a streamline design that where the elementary schoolers had the chance to build towers with different building materials(blocks) and see if they would withstand different weather conditions. A post activity survey showed that 94.6% of kids said the exhibit was fun. Also the results of the pre, and post quizzes show a 47.1% increase in correct answers after completing the activities. </p>
+   <h3>Calculator</h3>
+   <a class="link" href="https://github.com/arj916">GitHub Link</a>
+   <p>The challenge of this personal project was to create an interactive online calculator that is user friendly and a helpful addition to a person’s computer. The actions I took to achieve these goals was to create large and clearly labeled buttons that will update the screen when input is given. I also modified the code so the calculator could complete multiple mathematical operations using previous answers. This resulted in a calculator that can carry out all the basic mathematical tasks in a clear and intuitive way. Therefore, making it a useful tool for finding tips, percentages and quick mathematical equations. </p>
+   <h3>Concentration Game</h3>
+   <a class="link" href="https://github.com/arj916">GitHub Link</a>
+   <p>A fully interactive card game that allows the user to choose two cards and guess if they are the same number. if the user is correct the cards will disappear and the cards will reorganize. Else the cards turn back around. Self restarts with a working timer and graphics</p>
+   <h3>War Card Game</h3>
+   <a class="link" href="https://github.com/arj916">GitHub Link</a>
+   <p>The purpose of this project was to create a fun and easy to play card game. I achieved this purpose by coding a card game I played a lot as a child. I incorporated multiple functions that show the top card of each player  and a stat block that updates after each round. I also wrote thorough directions and bullet proofed the inputs so the game can continue smoothly despite an incorrect input. This resulted in an entertaining one player game that any user can enjoy that is very similar to the real life version.</p>
+    <h3>SpaceInvaders</h3>
+    <a class="link" href="https://github.com/arj916">GitHub Link</a>
+   <p>The purpose of this project was to create an enjoyable game that resembles the space invaders arcade game. I took actions to achieve this goal by creating bullet proof button controls that allow the player to easily maneuver the ship around the screen. I also coded the enemies that each shoot independently at the player so each round of the game is unique. This resulted in an entertaining game that users can play for hours.</p>
+    <h3>Pasta Bridge</h3>
+    <a class="link" class="link" href="https://lh3.googleusercontent.com/pw/AIL4fc-sInT6txtQgZZvy11ynP6XkaIa36uE8eq88VOGNKGBxekf80NFlaujQRnjl2gEQeXpvtNjW4F3lWUloXyIb5-F1u2utAZ0fJt4CpWUMhH-ZKi8x8A=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/pw/AIL4fc-sInT6txtQgZZvy11ynP6XkaIa36uE8eq88VOGNKGBxekf80NFlaujQRnjl2gEQeXpvtNjW4F3lWUloXyIb5-F1u2utAZ0fJt4CpWUMhH-ZKi8x8A=w600-h315-p-k" /> </a>
+   <p>My team and I were tasked with constructing a bridge that can hold the largest amount of weight possible. The restrictions for the bridge include  that it is made out of only pasta, and adhesive, that weights less 125grams, spans a chasm that is 30 cm long, and should have space for a 4cm "person" to cross the bridge. During this process, my team had to overcome balancing stability with weight, determining which materials to use and making a bridge that balanced, with no obvious weak section. The end result included 2 designs that were made out of fettuccini, lasagna, and hot glue. We incorporated triangles and cross sections to promote stability with minimal weight increased. The testing of the final products showed that design 1 could hold 23.7 times its own weight and design 2 could hold 22.1 times its own weight.</p>
+    <h3>Action Figure</h3>
+ <div class="action"><a href="https://lh3.googleusercontent.com/pw/AIL4fc_ZkFwRIALxzEe603veiJHDzH_ARl1-_7WS_lh8EylFIAUf2VyZwBsuGMtIFYFcpH_Wd_oNln8cbeTZ1u7k6VA9gNw-eDMM-5Pk--sEpVTewGT-RlM=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/pw/AIL4fc_ZkFwRIALxzEe603veiJHDzH_ARl1-_7WS_lh8EylFIAUf2VyZwBsuGMtIFYFcpH_Wd_oNln8cbeTZ1u7k6VA9gNw-eDMM-5Pk--sEpVTewGT-RlM=w600-h315-p-k" /> </a></div>
+   <p> I was tasked with creating a unique laser cut figure that could stand up by itself, and had 5 or more custom parts. The main challenges of the project were the material being very weak, the conversion from a 2-D design to a 3-D final product, and an unknown margin of error from laser cutter. I overcame these challenges by adjusting my measurements by a small margin and using the moldable characteristics of cardboard to my advantage to promote stability.</p>
+   <div class="sectionOdd">
+   <h2  id = "Leadership">Leadership</h2>
+   </div>
+   <h4>Girls Coding Club</h4>
+  <h5>President, Deerfield, IL September 2018-June 2021</h5>
+    <ul>
+    <li>Empowered students to enter the STEM field and educate them about possible careers</li>
+    <li> Organized lessons and implemented coding resources to teach coding basics. Taught club members multiple coding
+languages including Java, JavaScript, HTML and Python 
+</li>
+   <li>Increased membership by 23% and ran meetings with an average attendance of 30-40 participants</li>
+    </ul>
+   <h4>Cornerstone of Engineering</h4>
+  <h5>Project Manager, Boston, MA January 2022-May 2022
+</h5>
+   <ul>
+    <li> Organized meeting times, created deadlines for deliverables, and check on progress of deliverables with groupmates 
+</li>
+    <li> Presented updates of project to class in a formal presentation
+</li>
+   </ul>
+  </div>
+</div>
+</html>
+
